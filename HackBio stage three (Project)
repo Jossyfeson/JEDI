@@ -112,6 +112,7 @@ for file1 in ~/workshop/data/trimmed_fastq_file/*_r1.trimmed.fastq
     sorted_bam=~/workshop/results/bam/${base}.aligned.sorted.bam
     raw_bcf=~/workshop/results/bcf/${base}_raw.bcf
     variants=~/workshop/results/vcf/${base}_variants.vcf
+    
     final_variants=~/workshop/results/vcf/${base}_final_variants.vcf 
     echo "Aligning..."
     bwa mem $ref_genome $file1 $file2 > $sam
